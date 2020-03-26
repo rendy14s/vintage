@@ -70,11 +70,14 @@ $e_subject = 'You\'ve been contacted by ' . $form_name . '.';
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "Anda telah dihubungi oleh $form_name. 
-				$form_name memilih service $occasion, adapun pesanan tambahan sebagai berikut. 
+$e_body = "Anda telah dihubungi oleh $form_name.
+
+			$form_name Melakukan Booking Table untuk $occasion, 
+		
+			adapun pesanan tambahan sebagai berikut : 
 					Untuk $no_of_persons Orang dan prefer untuk $preferred_food" . PHP_EOL . PHP_EOL;
-$e_content = "Untuk tanggal $date_time Jam $time_picker" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $form_name via phone $phone";
+$e_content = "Untuk tanggal $date_picker Jam $time_picker" . PHP_EOL . PHP_EOL;
+$e_reply = "Silahkan hubungi $form_name via telepon/wa : $phone";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
@@ -95,6 +98,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo "</div>";
 	echo "</fieldset>";
 
+	header("Location:http://develope.vintage.co.id/"); 
 } else {
 
 	echo 'ERROR!';
