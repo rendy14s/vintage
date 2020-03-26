@@ -112,6 +112,25 @@
 
 		/* =========================
 
+            POPUP ADS 
+
+		=========================*/
+
+
+		
+		$(document).ready(function() {
+
+			setTimeout(function() {
+				document.getElementById('popbox').classList.remove('hide');
+				document.body.className+=" flowbox"
+			}, 4000);
+
+		});
+
+
+
+		/* =========================
+
             CAROUSEL 
 
         =========================*/
@@ -129,8 +148,6 @@
 			  itemsDesktop : [1199,3],
 
 			  itemsDesktopSmall : [979,2]
-
-		 
 
 		  });
 
