@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- color -->
     <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+    <!-- POPUP CSS -->
+    <link rel="stylesheet" href="css/css-popup.css">
 
     <!-- Modernizer -->
     <script src="js/modernizer.js"></script>
@@ -37,7 +39,20 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script>
+        setTimeout(function() {
+            document.getElementById('popbox').classList.remove('hide');
+            document.body.className+=" flowbox"
+        }, 2000);
+        
+        function removeClassonBody() {
+            var element=document.body;
+            element.className=element.className.replace(/bflowboxb/g,"")
+        }
+    </script>
+
 </head>
+
 
 <body>
     <div id="loader">
@@ -1255,12 +1270,26 @@
     <!-- end footer-main -->
 
     <a href="#" class="scrollup" style="display: none;">Scroll</a>
-
+    
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+
+    <div class="popbox hide wow fadeIn" id="popbox">
+        <div aria-label='Close' class="pop-overlay" onclick='document.getElementById("popbox").style.display="none";removeClassonBody();' role="button" tabindex="0"/>
+            <div class="pop-content">
+                <div>
+                    <div class="popcontent">
+                        <img src="images/popup.jpg" alt="banner" width="850" height="450"/>
+                    </div>
+                </div>
+                <button aria-label='Close' class='popbox-close-button' onclick='document.getElementById("popbox").style.display="none";removeClassonBody();'>&times;</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
