@@ -466,7 +466,7 @@ html, body{ height: 100%; }
 
  }
 
- #status-text {
+ #status-container {
 
     width: 29%;
     
@@ -474,13 +474,132 @@ html, body{ height: 100%; }
     
     position: absolute;
     
-    left: 44%;
+    left: 43%;
     
-    top: 50%;
+    top: 46%;
     
     margin: -100px 0 0 -100px;
  }
 
+ #status-text {
+
+    text-align: center;
+
+ }
+
+ @media screen and (max-width: 480px) {
+        #status-container {
+
+        width: 100%;
+        
+        height: 30%;
+        
+        position: absolute;
+        
+        left: 28%;
+        
+        top: 46%;
+        
+        margin: -100px 0 0 -100px;
+    }
+
+    #status-text {
+        
+        text-align: center;
+
+    }
+  }
+
+  /* Iphone X */
+
+  @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+        #status-container {
+
+            width: 100%;
+            
+            height: 30%;
+            
+            position: absolute;
+            
+            left: 28%;
+            
+            top: 46%;
+            
+            margin: -100px 0 0 -100px;
+        }
+    
+        #status-text {
+            
+            text-align: center;
+    
+        }
+
+    }
+
+
+    /* Iphone 8 */
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+
+        #status-container {
+
+            width: 100%;
+            
+            height: 30%;
+            
+            position: absolute;
+            
+            left: 28%;
+            
+            top: 46%;
+            
+            margin: -100px 0 0 -100px;
+        }
+    
+        #status-text {
+            
+            text-align: center;
+    
+        }
+
+    }
+
+    /* Iphone 8 Plus */
+
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) {
+
+        #status-container {
+
+            width: 100%;
+            
+            height: 30%;
+            
+            position: absolute;
+            
+            left: 24%;
+            
+            top: 46%;
+            
+            margin: -100px 0 0 -100px;
+        }
+    
+        #status-text {
+            
+            text-align: center;
+    
+        }
+
+     }
 
 
 
