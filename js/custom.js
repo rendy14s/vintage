@@ -123,7 +123,7 @@
 			setTimeout(function() {
 				document.getElementById('popbox').classList.remove('hide');
 				document.body.className+=" flowbox"
-			}, 4000);
+			}, 13000);
 
 		});
 
