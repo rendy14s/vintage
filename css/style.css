@@ -466,6 +466,21 @@ html, body{ height: 100%; }
 
  }
 
+ #status-text {
+
+    width: 29%;
+    
+    height: 30%;
+    
+    position: absolute;
+    
+    left: 44%;
+    
+    top: 50%;
+    
+    margin: -100px 0 0 -100px;
+ }
+
 
 
 
